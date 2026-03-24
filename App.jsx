@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 import { motion, useInView, useMotionValue, useSpring, AnimatePresence } from "framer-motion";
 import { MessageCircle, Instagram, Mail, Copy, Check, Star, ChevronRight, Play, Layers } from "lucide-react";
 import data from "/data.json";
+import "/index.css";
 /* ─── Helpers ─────────────────────────────────── */
 const NEON = "#00f2ff";
 
