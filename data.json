@@ -3,8 +3,8 @@
     "name": "YACMD",
     "tagline": "Elevating Digital Narrative",
     "subtagline": "Premium video editing & graphic design that transforms brands into cultural moments.",
-    "profileImage": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop&crop=face",
-    "email": "hello@yacmd.studio",
+    "profileImage": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774463539/gemini-2.5-flash-image_make_the_eyes_with_your_creativity_i_want_in_my_eyes_a_reflection_of_a_timeline_-0_1_ujn6a0.jpg",
+    "email": "yassineworld48@gmail.com",
     "ctaButton": "Get in Touch"
   },
   "stats": [
@@ -16,108 +16,82 @@
     {
       "id": 1,
       "category": "Video Editing",
-      "title": "Brand Story — Luminary",
-      "description": "Cinematic brand film with color grading",
+      "title": "Instagram Viral Edit",
+      "description": "Short-form content optimized for Instagram Reels (9:16).",
       "size": "large",
-      "image": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446216/1209_9_rodejh.mp4",
+      "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774445704/0128_1_avwt1j.mp4",
+      "thumbnailUrl": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462819/ChatGPT_Image_9_mars_2026_21_09_29_ny7j8f.png",
+      "aspectRatio": "9/16",
       "tag": "Video"
     },
     {
       "id": 2,
-      "category": "Graphic Design",
-      "title": "Meridian Identity",
-      "description": "Full visual identity system",
-      "size": "small",
-      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
-      "tag": "Design"
+      "category": "Video Editing",
+      "title": "YouTube Cinematic",
+      "description": "High-quality long-form editing for YouTube (16:9).",
+      "size": "medium",
+      "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446013/0131_4_lvohdb.mp4",
+      "thumbnailUrl": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446042/1_iodwws.png",
+      "aspectRatio": "16/9",
+      "tag": "Video"
     },
     {
       "id": 3,
-      "category": "Video Editing",
-      "title": "Social Reel Pack",
-      "description": "Viral-optimized short-form content",
+      "category": "Graphic Design",
+      "title": "Reel Cover Design",
+      "description": "Visual identity and cover art for social media content.",
       "size": "small",
-      "image": "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=400&h=400&fit=crop",
-      "tag": "Video"
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462754/ChatGPT_Image_9_mars_2026_22_09_50_b51bbk.png",
+      "tag": "Design"
     },
     {
       "id": 4,
       "category": "Graphic Design",
-      "title": "Nova Campaign",
-      "description": "Multi-platform ad campaign visuals",
-      "size": "large",
-      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "title": "E-Sports Jersey",
+      "description": "Custom apparel design for gaming and e-sports teams.",
+      "size": "small",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446057/Screenshot_2025-05-23_224910_yxbcxz.png",
       "tag": "Design"
     },
     {
       "id": 5,
       "category": "Video Editing",
-      "title": "Documentary Cut",
-      "description": "Long-form editorial storytelling",
+      "title": "Cinematic Storytelling",
+      "description": "Wide-angle cinematic edit with premium grading.",
       "size": "medium",
-      "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop",
+      "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446216/1209_9_rodejh.mp4",
+      "thumbnailUrl": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446088/WhatsApp_Image_2025-06-22_at_14.27.13_3a0d7429_zaavnf.jpg",
+      "aspectRatio": "16/9",
       "tag": "Video"
     },
     {
       "id": 6,
-      "category": "Graphic Design",
-      "title": "Flux Packaging",
-      "description": "Luxury product packaging design",
-      "size": "medium",
-      "image": "https://images.unsplash.com/photo-1586495777744-4e6232bf0df0?w=600&h=400&fit=crop",
-      "tag": "Design"
+      "category": "Branding",
+      "title": "Restaurant Identity",
+      "description": "Logo design and branding for a restaurant (نخيل).",
+      "size": "small",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446092/%D9%86%D8%AE%D9%8A%D9%84_vjplfs.png",
+      "tag": "Logo"
     }
   ],
   "testimonials": [
     {
       "id": 1,
-      "name": "Sofia Reyes",
-      "role": "CEO, Luminary Media",
-      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
-      "quote": "YACMD transformed our brand story into something genuinely cinematic. The results blew our entire team away.",
-      "stars": 5
-    },
-    {
-      "id": 2,
-      "name": "Marcus Chen",
-      "role": "Founder, Nova Labs",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
-      "quote": "The attention to detail is unreal. Every frame felt intentional. Our campaign CTR doubled after the rebrand.",
-      "stars": 5
-    },
-    {
-      "id": 3,
-      "name": "Amara Osei",
-      "role": "Creative Director, Flux Studio",
-      "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&fit=crop&crop=face",
-      "quote": "Rarely do you find someone who understands both the technical and the emotional side of visual storytelling.",
-      "stars": 5
-    },
-    {
-      "id": 4,
-      "name": "Liam Torres",
-      "role": "Head of Marketing, Meridian",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face",
-      "quote": "Fast, professional, and absolutely stunning work. YACMD is our go-to for every campaign launch.",
-      "stars": 5
-    },
-    {
-      "id": 5,
-      "name": "Zara Nakamura",
-      "role": "Brand Strategist, Pulse Agency",
-      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
-      "quote": "Our social engagement skyrocketed. The reels hit a combined 1.2M views in the first week alone.",
+      "name": "Alex Riv",
+      "role": "Content Creator",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
+      "quote": "The attention to detail in the edits is unreal. Highly recommended!",
       "stars": 5
     }
   ],
   "social": [
-    { "id": 1, "platform": "WhatsApp", "url": "https://wa.me/1234567890", "icon": "MessageCircle" },
-    { "id": 2, "platform": "Instagram", "url": "https://instagram.com/yacmd", "icon": "Instagram" },
-    { "id": 3, "platform": "Gmail", "url": "mailto:hello@yacmd.studio", "icon": "Mail" }
+    { "id": 1, "platform": "Instagram", "url": "https://www.instagram.com/yacmd_motion", "icon": "Instagram" },
+    { "id": 2, "platform": "WhatsApp", "url": "https://wa.me/212640161819", "icon": "MessageCircle" },
+    { "id": 3, "platform": "Gmail", "url": "mailto:yassineworld48@gmail.com", "icon": "Mail" }
   ],
   "nav": [
     { "label": "Work", "href": "#portfolio" },
     { "label": "Stats", "href": "#stats" },
-    { "label": "Reviews", "href": "#testimonials" }
+    { "label": "Contact", "href": "#contact" }
   ]
 }
