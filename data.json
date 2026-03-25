@@ -16,11 +16,11 @@
     {
       "id": 1,
       "category": "Video Editing",
-      "title": "Instagram Viral Edit",
-      "description": "Short-form content optimized for Instagram Reels (9:16).",
+      "title": "Instagram Reels Vibe",
+      "description": "Short-form content (9:16).",
       "size": "large",
       "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774445704/0128_1_avwt1j.mp4",
-      "thumbnailUrl": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462819/ChatGPT_Image_9_mars_2026_21_09_29_ny7j8f.png",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462819/ChatGPT_Image_9_mars_2026_21_09_29_ny7j8f.png",
       "aspectRatio": "9/16",
       "tag": "Video"
     },
@@ -28,47 +28,84 @@
       "id": 2,
       "category": "Video Editing",
       "title": "YouTube Cinematic",
-      "description": "High-quality long-form editing for YouTube (16:9).",
+      "description": "Long-form storytelling (16:9).",
       "size": "medium",
       "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446013/0131_4_lvohdb.mp4",
-      "thumbnailUrl": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446042/1_iodwws.png",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462754/ChatGPT_Image_9_mars_2026_22_09_50_b51bbk.png",
       "aspectRatio": "16/9",
       "tag": "Video"
     },
     {
       "id": 3,
-      "category": "Graphic Design",
-      "title": "Reel Cover Design",
-      "description": "Visual identity and cover art for social media content.",
-      "size": "small",
-      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462754/ChatGPT_Image_9_mars_2026_22_09_50_b51bbk.png",
-      "tag": "Design"
+      "category": "Video Editing",
+      "title": "Desert Aesthetic",
+      "description": "Premium color grading (16:9).",
+      "size": "medium",
+      "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446216/1209_9_rodejh.mp4",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446088/WhatsApp_Image_2025-06-22_at_14.27.13_3a0d7429_zaavnf.jpg",
+      "aspectRatio": "16/9",
+      "tag": "Video"
     },
     {
       "id": 4,
       "category": "Graphic Design",
-      "title": "E-Sports Jersey",
-      "description": "Custom apparel design for gaming and e-sports teams.",
+      "title": "E-Sports Jersey (Front)",
       "size": "small",
       "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446057/Screenshot_2025-05-23_224910_yxbcxz.png",
       "tag": "Design"
     },
     {
       "id": 5,
-      "category": "Video Editing",
-      "title": "Cinematic Storytelling",
-      "description": "Wide-angle cinematic edit with premium grading.",
-      "size": "medium",
-      "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446216/1209_9_rodejh.mp4",
-      "thumbnailUrl": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446088/WhatsApp_Image_2025-06-22_at_14.27.13_3a0d7429_zaavnf.jpg",
-      "aspectRatio": "16/9",
-      "tag": "Video"
+      "category": "Graphic Design",
+      "title": "E-Sports Jersey (Back)",
+      "size": "small",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446044/2_dqovim.png",
+      "tag": "Design"
     },
     {
       "id": 6,
+      "category": "Graphic Design",
+      "title": "E-Sports Jersey (Alt)",
+      "size": "small",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446042/1_iodwws.png",
+      "tag": "Design"
+    },
+    {
+      "id": 7,
+      "category": "Product Design",
+      "title": "Apparel Showcase Angle 1",
+      "size": "medium",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446087/WhatsApp_Image_2025-06-22_at_14.27.12_9bc7d275_ejraz2.jpg",
+      "tag": "Design"
+    },
+    {
+      "id": 8,
+      "category": "Product Design",
+      "title": "Apparel Showcase Angle 2",
+      "size": "medium",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446088/WhatsApp_Image_2025-06-22_at_14.27.13_3a0d7429_zaavnf.jpg",
+      "tag": "Design"
+    },
+    {
+      "id": 9,
+      "category": "Product Design",
+      "title": "Apparel Showcase Angle 3",
+      "size": "medium",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446084/WhatsApp_Image_2025-06-22_at_14.27.06_d1eb1ceb_i4xlca.jpg",
+      "tag": "Design"
+    },
+    {
+      "id": 10,
+      "category": "Product Design",
+      "title": "Apparel Showcase Angle 4",
+      "size": "medium",
+      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446091/WhatsApp_Image_2025-06-22_at_14.27.22_b764836c_ca3qsg.jpg",
+      "tag": "Design"
+    },
+    {
+      "id": 11,
       "category": "Branding",
-      "title": "Restaurant Identity",
-      "description": "Logo design and branding for a restaurant (نخيل).",
+      "title": "Nakheel Logo",
       "size": "small",
       "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446092/%D9%86%D8%AE%D9%8A%D9%84_vjplfs.png",
       "tag": "Logo"
@@ -77,7 +114,7 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "Alex Riv",
+      "name": "Client",
       "role": "Content Creator",
       "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
       "quote": "The attention to detail in the edits is unreal. Highly recommended!",
