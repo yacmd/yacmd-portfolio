@@ -18,10 +18,8 @@
       "category": "Video Editing",
       "title": "Instagram Reels Style",
       "description": "Short-form viral content.",
-      "size": "large",
       "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462819/ChatGPT_Image_9_mars_2026_21_09_29_ny7j8f.png",
       "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774445704/0128_1_avwt1j.mp4",
-      "aspectRatio": "9/16",
       "tag": "Video"
     },
     {
@@ -29,88 +27,33 @@
       "category": "Video Editing",
       "title": "Cinematic Storytelling",
       "description": "Long-form professional edits.",
-      "size": "medium",
       "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462754/ChatGPT_Image_9_mars_2026_22_09_50_b51bbk.png",
       "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446013/0131_4_lvohdb.mp4",
-      "aspectRatio": "16/9",
       "tag": "Video"
     },
     {
       "id": 3,
-      "category": "Video Editing",
-      "title": "Desert Vibes Edit",
-      "description": "Premium color grading and motion.",
-      "size": "medium",
-      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446088/WhatsApp_Image_2025-06-22_at_14.27.13_3a0d7429_zaavnf.jpg",
-      "videoUrl": "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446216/1209_9_rodejh.mp4",
-      "aspectRatio": "16/9",
-      "tag": "Video"
-    },
-    {
-      "id": 4,
       "category": "Graphic Design",
       "title": "E-Sports Jersey Front",
-      "size": "small",
+      "description": "Custom jersey design with Moroccan identity.",
       "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446057/Screenshot_2025-05-23_224910_yxbcxz.png",
       "tag": "Design"
     },
     {
-      "id": 5,
-      "category": "Graphic Design",
-      "title": "E-Sports Jersey Back",
-      "size": "small",
-      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446044/2_dqovim.png",
-      "tag": "Design"
-    },
-    {
-      "id": 6,
+      "id": 4,
       "category": "Graphic Design",
       "title": "Jersey Design Variant",
-      "size": "small",
+      "description": "Alternative concept for sports apparel.",
       "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446042/1_iodwws.png",
       "tag": "Design"
     },
     {
-      "id": 7,
-      "category": "Product Design",
-      "title": "Apparel Showcase One",
-      "size": "medium",
-      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446087/WhatsApp_Image_2025-06-22_at_14.27.12_9bc7d275_ejraz2.jpg",
-      "tag": "Design"
-    },
-    {
-      "id": 8,
-      "category": "Product Design",
-      "title": "Apparel Showcase Two",
-      "size": "medium",
-      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446084/WhatsApp_Image_2025-06-22_at_14.27.06_d1eb1ceb_i4xlca.jpg",
-      "tag": "Design"
-    },
-    {
-      "id": 9,
-      "category": "Product Design",
-      "title": "Apparel Showcase Three",
-      "size": "medium",
-      "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446091/WhatsApp_Image_2025-06-22_at_14.27.22_b764836c_ca3qsg.jpg",
-      "tag": "Design"
-    },
-    {
-      "id": 10,
+      "id": 5,
       "category": "Branding",
       "title": "Nakheel Logo Design",
-      "size": "small",
+      "description": "Modern Arabic typography logo.",
       "image": "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446092/%D9%86%D8%AE%D9%8A%D9%84_vjplfs.png",
       "tag": "Logo"
-    }
-  ],
-  "testimonials": [
-    {
-      "id": 1,
-      "name": "Creative Client",
-      "role": "Content Creator",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop",
-      "quote": "YACMD transformed our brand story into something cinematic. The results are top-tier.",
-      "stars": 5
     }
   ],
   "social": [
