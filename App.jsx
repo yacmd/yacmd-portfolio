@@ -464,12 +464,23 @@ function PortfolioItem({ item, index }) {
       data-cursor="true"
     >
       <div className={`relative ${heightClass} w-full`}>
-        <img
-          src={item.image}
-          alt={item.title}
-          className="w-full h-full object-cover"
-        />
-
+       {item.videoUrl ? (
+  <video
+    src={item.videoUrl}
+    poster={item.image}
+    controls
+    playsInline
+    preload="metadata"
+    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+    style={{ aspectRatio: item.aspectRatio === '9/16' ? '9/16' : '16/9' }}
+  />
+) : (
+  <img
+    src={item.image}
+    alt={item.title}
+    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+  />
+)}
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
