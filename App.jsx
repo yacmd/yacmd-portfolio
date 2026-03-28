@@ -9,13 +9,17 @@ import {
    DATA
 ───────────────────────────────────────────── */
 const portfolioData = [
-  { id: 1, category: "video",  title: "Instagram Reels Style",  src: "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774445704/0128_1_avwt1j.mp4",   poster: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462819/ChatGPT_Image_9_mars_2026_21_09_29_ny7j8f.png" },
-  { id: 2, category: "video",  title: "Cinematic Storytelling", src: "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446013/0131_4_lvohdb.mp4",   poster: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462754/ChatGPT_Image_9_mars_2026_22_09_50_b51bbk.png" },
-  { id: 3, category: "video",  title: "Desert Vibes Edit",      src: "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446216/1209_9_rodejh.mp4",   poster: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446088/WhatsApp_Image_2025-06-22_at_14.27.13_3a0d7429_zaavnf.jpg" },
-  { id: 4, category: "design", title: "E-Sports Jersey Front",  src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446057/Screenshot_2025-05-23_224910_yxbcxz.png" },
-  { id: 5, category: "design", title: "E-Sports Jersey Back",   src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446042/1_iodwws.png" },
-  { id: 6, category: "design", title: "Jersey Design Variant",  src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446044/2_dqovim.png" },
-  { id: 7, category: "design", title: "Nakheel Logo Design",    src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446092/%D9%86%D8%AE%D9%8A%D9%84_vjplfs.png" },
+  // VIDEOS (no posters — thumbnails auto-generated from first frame)
+  { id: 1, category: "video",  title: "Instagram Reels Style",  src: "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774445704/0128_1_avwt1j.mp4" },
+  { id: 2, category: "video",  title: "Cinematic Storytelling", src: "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446013/0131_4_lvohdb.mp4" },
+  { id: 3, category: "video",  title: "Desert Vibes Edit",      src: "https://res.cloudinary.com/dqjkemqw3/video/upload/v1774446216/1209_9_rodejh.mp4" },
+  // DESIGNS (now 6 — former poster images properly placed here)
+  { id: 4, category: "design", title: "Galoulin Style Deco - Ep 1", src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462819/ChatGPT_Image_9_mars_2026_21_09_29_ny7j8f.png" },
+  { id: 5, category: "design", title: "Galoulin Le Bois - Ep 3",    src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774462754/ChatGPT_Image_9_mars_2026_22_09_50_b51bbk.png" },
+  { id: 6, category: "design", title: "E-Sports Jersey Front",       src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446057/Screenshot_2025-05-23_224910_yxbcxz.png" },
+  { id: 7, category: "design", title: "E-Sports Jersey Back",        src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446042/1_iodwws.png" },
+  { id: 8, category: "design", title: "Jersey Design Variant",       src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446044/2_dqovim.png" },
+  { id: 9, category: "design", title: "Nakheel Logo Design",         src: "https://res.cloudinary.com/dqjkemqw3/image/upload/v1774446092/%D9%86%D8%AE%D9%8A%D9%84_vjplfs.png" },
 ];
 
 const PROFILE_IMG =
@@ -125,6 +129,23 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opac
 /* video grid */
 .vgrid{display:grid;gap:24px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
 @media(max-width:700px){.vgrid{grid-template-columns:1fr}}
+
+/* ── video thumbnail card (grid preview — opens full player on click) ── */
+@keyframes playPulse{0%,100%{box-shadow:0 0 0 0 rgba(22,163,74,.6);transform:translate(-50%,-50%) scale(1)}60%{box-shadow:0 0 0 16px rgba(22,163,74,0);transform:translate(-50%,-50%) scale(1.06)}}
+.vtcard{border-radius:var(--r);overflow:hidden;background:#000;border:1px solid var(--border);position:relative;cursor:none;transition:border-color .3s,box-shadow .3s}
+.vtcard:hover{border-color:var(--green);box-shadow:0 0 38px var(--gglow)}
+.vtcard-thumb{position:relative;overflow:hidden;background:#000;aspect-ratio:16/9}
+.vtcard-thumb video{display:block;width:100%;height:100%;object-fit:contain;background:#000}
+.vtcard-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:rgba(22,163,74,.9);display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:4;animation:playPulse 2.5s ease infinite;transition:opacity .22s,transform .22s}
+.vtcard:hover .vtcard-play{opacity:0;transform:translate(-50%,-50%) scale(.65)}
+.vtcard-badge{position:absolute;top:12px;left:12px;z-index:5;display:flex;align-items:center;gap:6px;padding:6px 13px 6px 10px;border-radius:6px;background:rgba(22,163,74,.92);backdrop-filter:blur(8px);font-family:var(--fm);font-size:11px;font-weight:600;color:#000;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 0 16px var(--gglow)}
+.vtcard-dur{position:absolute;bottom:10px;right:10px;z-index:5;padding:3px 9px;border-radius:4px;background:rgba(0,0,0,.78);font-family:var(--fm);font-size:10px;color:var(--white2);letter-spacing:.05em}
+.vtcard-ft{padding:12px 14px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:8px}
+/* full-player modal */
+.vmodal-bg{position:fixed;inset:0;z-index:900;background:rgba(0,0,0,.95);backdrop-filter:blur(16px);display:flex;flex-direction:column;align-items:center;justify-content:center;animation:fadeIn .22s ease both;padding:16px}
+.vmodal-inner{width:100%;max-width:900px}
+.vmodal-close{align-self:flex-end;margin-bottom:12px;background:rgba(255,255,255,.07);border:1px solid var(--border2);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:none;color:var(--white);transition:background .2s,border-color .2s;flex-shrink:0}
+.vmodal-close:hover{background:rgba(22,163,74,.2);border-color:var(--green)}
 
 /* video player */
 .vp{border-radius:var(--r);overflow:hidden;background:#000;border:1px solid var(--border);position:relative;transition:border-color var(--tr),box-shadow var(--tr)}
@@ -337,8 +358,84 @@ function Lightbox({ items, startIndex, onClose }) {
 }
 
 /* ─────────────────────────────────────────────
-   TAB SWITCHER
+   VIDEO THUMBNAIL CARD  (grid tile → opens full player modal)
 ───────────────────────────────────────────── */
+function VideoThumbnailCard({ item, onClick }) {
+  const previewRef = useRef(null);
+  const [hovering, setHovering] = useState(false);
+  const [dur, setDur]   = useState(null);
+
+  const fmt = (s) => {
+    if (!s || isNaN(s)) return "";
+    const m = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return `${m}:${sec.toString().padStart(2,"0")}`;
+  };
+
+  const onEnter = () => {
+    setHovering(true);
+    if (previewRef.current) {
+      previewRef.current.currentTime = 0;
+      previewRef.current.muted = true;
+      previewRef.current.play().catch(() => {});
+    }
+  };
+  const onLeave = () => {
+    setHovering(false);
+    if (previewRef.current) { previewRef.current.pause(); previewRef.current.currentTime = 0; }
+  };
+
+  return (
+    <div className="vtcard" onMouseEnter={onEnter} onMouseLeave={onLeave} onClick={onClick}>
+      <div className="vtcard-thumb">
+        <video
+          ref={previewRef}
+          src={item.src}
+          muted playsInline preload="metadata"
+          onLoadedMetadata={e => setDur(e.target.duration)}
+          style={{ display:"block", width:"100%", height:"100%", objectFit:"contain", background:"#000" }}
+        />
+        {/* Play button — hides on hover once video starts */}
+        <div className="vtcard-play">
+          <Play size={28} fill="#000" color="#000" style={{ marginLeft: 4 }} />
+        </div>
+        {/* VIDEO badge */}
+        <div className="vtcard-badge">
+          <Play size={10} fill="#000" color="#000" />
+          VIDEO
+        </div>
+        {dur && <div className="vtcard-dur">{fmt(dur)}</div>}
+      </div>
+      <div className="vtcard-ft">
+        <span style={{ fontFamily:"var(--fb)", fontWeight:600, fontSize:13, color:"var(--white)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{item.title}</span>
+        <span style={{ fontFamily:"var(--fm)", fontSize:9, color:"var(--ghi)", letterSpacing:".18em", textTransform:"uppercase", flexShrink:0 }}>PLAY ▶</span>
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   VIDEO MODAL  (full custom player in overlay)
+───────────────────────────────────────────── */
+function VideoModal({ item, onClose }) {
+  useEffect(() => {
+    const fn = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", fn);
+    return () => window.removeEventListener("keydown", fn);
+  });
+  return (
+    <div className="vmodal-bg" onClick={onClose}>
+      <div className="vmodal-inner" onClick={e => e.stopPropagation()}>
+        <div style={{ display:"flex", justifyContent:"flex-end", marginBottom:12 }}>
+          <button className="vmodal-close" onClick={onClose}><X size={18} /></button>
+        </div>
+        <VideoPlayer item={item} />
+        <div style={{ marginTop:14, fontFamily:"var(--fb)", fontWeight:600, fontSize:14, color:"var(--white)", textAlign:"center" }}>{item.title}</div>
+      </div>
+    </div>
+  );
+}
+
+
 const TABS = [
   { id: "video",  label: "Motion & Editing", Icon: Clapperboard },
   { id: "design", label: "Graphic Design",   Icon: Palette },
@@ -376,6 +473,7 @@ export default function App() {
   const [tab, setTab]       = useState("video");
   const [gridKey, setKey]   = useState(0);
   const [lb, setLb]         = useState(null);   // { items, index }
+  const [vm, setVm]         = useState(null);   // video modal item
   const [dot, setDot]       = useState({ x: -99, y: -99 });
   const [ring, setRing]     = useState({ x: -99, y: -99 });
   const ringRef             = useRef({ x: -99, y: -99 });
@@ -492,11 +590,7 @@ export default function App() {
           <div key={`v${gridKey}`} className="vgrid">
             {videos.map((item, i) => (
               <div key={item.id} className="ati" style={{ animationDelay: `${i * 0.1}s` }}>
-                <VideoPlayer item={item} />
-                <div style={{ padding: "11px 4px 0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                  <span style={{ fontFamily: "var(--fb)", fontWeight: 600, fontSize: 13, color: "var(--white)" }}>{item.title}</span>
-                  <span style={{ fontFamily: "var(--fm)", fontSize: 9, color: "var(--ghi)", letterSpacing: ".15em", textTransform: "uppercase" }}>VIDEO</span>
-                </div>
+                <VideoThumbnailCard item={item} onClick={() => setVm(item)} />
               </div>
             ))}
           </div>
@@ -562,6 +656,9 @@ export default function App() {
 
       {/* ── LIGHTBOX ── */}
       {lb && <Lightbox items={lb.items} startIndex={lb.index} onClose={() => setLb(null)} />}
+
+      {/* ── VIDEO MODAL ── */}
+      {vm && <VideoModal item={vm} onClose={() => setVm(null)} />}
     </>
   );
 }
