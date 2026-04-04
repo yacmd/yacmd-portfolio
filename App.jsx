@@ -4,6 +4,7 @@ import {
   Settings, X, ChevronLeft, ChevronRight,
   Mail, MessageCircle, Instagram, Clapperboard, Palette, ZoomIn
 } from "lucide-react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 /* ─────────────────────────────────────────────
    DATA
@@ -659,6 +660,9 @@ export default function App() {
 
       {/* ── VIDEO MODAL ── */}
       {vm && <VideoModal item={vm} onClose={() => setVm(null)} />}
+
+      {/* ── VERCEL SPEED INSIGHTS ── */}
+      <SpeedInsights />
     </>
   );
 }
